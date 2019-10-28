@@ -43,9 +43,19 @@ public class Order extends AbstractOrder {
     public Integer getOrderState() {
         return orderState;
     }
-
+    //加入notifyall函数：ruanbanyao
     public void setOrderState(Integer orderState) {
         this.orderState = orderState;
+        notifyAllEmployees();
+    }
+   //ruan
+    public void addEmploy(Employee e){
+        employeeList.add(e);
+    }
+    private void notifyAllEmployees() {
+        for (Employee employee : employeeList) {
+            employee.update();
+        }
     }
 
 }

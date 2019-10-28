@@ -1,18 +1,28 @@
+
 package edu.tongji.designpattern.ClassDesign.Person;
 
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.AirConditionerAPI;
+import edu.tongji.designpattern.ClassDesign.Business.Facade.OpenerMaker;
+import edu.tongji.designpattern.ClassDesign.Business.PrototypeMementoDemo.Item;
+import edu.tongji.designpattern.ClassDesign.Order.Order;
 
 public class Waiter extends Employee {
 
     Customer customer;
+    public OpenerMaker openerMaker;//ruan
     private double temperature;
+    //默认构造函数：ruan
+  public Waiter(){
+       super();
+   }
 
 
 
-
-
-    public Waiter(double temperature,AirConditionerAPI airConditionerAPI) {
+    //ruan
+    public Waiter(double temperature, AirConditionerAPI airConditionerAPI, Order order) {
         super(airConditionerAPI);
+        this.order=order;
+        this.order.addEmploy(this);
         this.temperature= temperature;
     }
 
@@ -34,10 +44,29 @@ public class Waiter extends Employee {
         System.out.println("服务员修改空调温度——");
         airConditionerAPI.changeTem(temperature);
     }
-
+    //ruan
     @Override
     public void update() {
-
+        if(order.getOrderState()==0)
+            System.out.println("class Waiter: method update:新订单创建！服务员等待接菜");
+        else
+            System.out.println("class Waiter: method update:订单完成！服务员开始上菜");
+    }
+    public void getDrinkList(Order order){
+        openerMaker=new OpenerMaker();
+        for (Item item : order.getItemList()) {
+            if (item.getName() == "百威啤酒" || item.getName() == "酸梅汁"|| item.getName() == "可乐"|| item.getName() == "雪碧") {
+                if (item.getName() == "百威啤酒") {
+                    openerMaker.openBeer();
+                }
+                else if(item.getName() == "可乐")
+                    openerMaker.openCock();
+                else if (item.getName() == "雪碧")
+                    openerMaker.openSprite();
+                else
+                    openerMaker .openDarkPlumJuice();
+            }
+        }
     }
 
 

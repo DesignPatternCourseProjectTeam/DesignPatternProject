@@ -1,14 +1,16 @@
 package edu.tongji.designpattern;
-import edu.tongji.designpattern.ClassDesign.*;
+//import edu.tongji.designpattern.ClassDesign.*;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.FloorAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.HangingAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.MenuSource;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.ProxyMenuSource;
-import edu.tongji.designpattern.ClassDesign.Business.PrototypeMementoDemo.Menu;
-import edu.tongji.designpattern.ClassDesign.Person.Customer;
-import edu.tongji.designpattern.ClassDesign.Person.Employee;
-import edu.tongji.designpattern.ClassDesign.Person.Manager;
-import edu.tongji.designpattern.ClassDesign.Person.Waiter;
+//import edu.tongji.designpattern.ClassDesign.Business.PrototypeMementoDemo.Menu;
+import edu.tongji.designpattern.ClassDesign.Business.PrototypeMementoDemo.Item;
+import edu.tongji.designpattern.ClassDesign.Order.Order;
+import edu.tongji.designpattern.ClassDesign.Person.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -39,7 +41,7 @@ public class Main {
 
         //test for BridgePattern
         //注册不同的职工来调用同一个接口API的不同实体类
-        Employee waiter1 = new Waiter(24,new FloorAirConditioner());
+        Employee waiter1 = new Waiter(24,new FloorAirConditioner(),new Order());
         Employee manager = new Manager(25,new HangingAirConditioner());
 
         waiter1.changeTmp();
@@ -112,9 +114,22 @@ public class Main {
 
 
         //输出菜单测试
-        Menu menu = Menu.getInstance();
-        menu.showMenu();
-
+//        Menu menu = Menu.getInstance();
+//        menu.showMenu();
+        //观察者模式测试
+        Order order= new Order();
+        Employee waiter2 = new Waiter(24,new FloorAirConditioner(),order);
+        Employee cook2= new Cook(24,new FloorAirConditioner(),order);
+        order.setOrderState(0);
+        order.setOrderState(1);
+        //facade测试
+        List<Item> items=new ArrayList<>();
+        items.add(new Item("可乐",20.2));
+        items.add(new Item("雪碧",20.2));
+        items.add(new Item("酸梅汁",20.2));
+        items.add(new Item("百威啤酒",20.2));
+        order.setItemList(items);
+        ((Waiter) waiter2).getDrinkList(order);
 
     }
 }

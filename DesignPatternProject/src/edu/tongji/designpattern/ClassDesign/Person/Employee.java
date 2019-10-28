@@ -9,7 +9,8 @@ enum Gender{
 
 public abstract class Employee {
 //    private AirConditionerAPI airConditionerAPI;
-    private Order order;
+    //waiter要使用order，所以改为protected：ruanbanyao
+    protected Order order;
     private  String employeeName;
     private Gender employeeGender;
     private Integer employeeAge;
@@ -22,7 +23,10 @@ public abstract class Employee {
     public Employee(AirConditionerAPI airConditionerAPI){
         this.airConditionerAPI= airConditionerAPI;
     }
+//ruan
+    public Employee() {
 
+    }
 
 
     public abstract void changeTmp();
@@ -30,6 +34,11 @@ public abstract class Employee {
     public abstract void settleComplaint();
     public abstract void getMessage();
     public abstract void sendMessage();
+
+    public Order getOrder() {
+        return order;
+    }
+
 
 }
 
