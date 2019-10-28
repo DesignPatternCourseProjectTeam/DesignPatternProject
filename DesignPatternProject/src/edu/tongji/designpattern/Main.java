@@ -1,4 +1,4 @@
-/*package edu.tongji.designpattern;
+package edu.tongji.designpattern;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.FloorAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.HangingAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.MenuSource;
@@ -130,4 +130,4 @@ public class Main {
         ((Waiter) waiter2).getDrinkList(order);
 
     }
-}*/
+}
