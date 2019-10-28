@@ -8,6 +8,9 @@ public class Waiter extends Employee {
     private double temperature;
 
 
+
+
+
     public Waiter(double temperature,AirConditionerAPI airConditionerAPI) {
         super(airConditionerAPI);
         this.temperature= temperature;
@@ -15,6 +18,15 @@ public class Waiter extends Employee {
 
     public void getState(Customer customer){
         System.out.println("顾客现在的状态是：");
+    }
+
+
+
+    @Override
+    public void settleComplaint() {
+        System.out.println("您好，请问您有什么问题吗?");
+        System.out.println("好的，我们会催促后厨尽快为您准备食物，请您稍等片刻！");
+        System.out.println("非常抱歉，同时祝您就餐愉快！");
     }
 
     @Override
@@ -28,10 +40,6 @@ public class Waiter extends Employee {
 
     }
 
-    @Override
-    public void settleComplaint() {
-
-    }
 
     @Override
     public void getMessage() {

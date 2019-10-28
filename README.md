@@ -1,3 +1,0 @@
-# DesignPatternProject
-
-change in dev
