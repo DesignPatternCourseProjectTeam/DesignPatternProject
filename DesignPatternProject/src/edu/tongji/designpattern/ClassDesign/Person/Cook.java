@@ -6,8 +6,8 @@ public class Cook extends Employee {
 
     private double temperature;
 
-    public Cook(double temperature,AirConditionerAPI airConditionerAPI) {
-        super(airConditionerAPI);
+    public Cook(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {
+        super(employeeID,airConditionerAPI);
         this.temperature=temperature;
     }
 
@@ -28,7 +28,7 @@ public class Cook extends Employee {
     }
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -36,4 +36,17 @@ public class Cook extends Employee {
     public void sendMessage() {
 
     }
+
+    @Override
+    protected void notifyChannel(BroadcastType broadcastType, String operation) {
+        try{
+            if (broadcastType == BroadcastType.ALL_EMPLOYEE){
+
+            }
+        }catch (NullPointerException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+
 }

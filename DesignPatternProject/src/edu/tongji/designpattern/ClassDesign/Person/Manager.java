@@ -6,8 +6,8 @@ public class Manager extends Employee {
 
     private double temperature;
 
-    public Manager(double temperature,AirConditionerAPI airConditionerAPI) {
-        super(airConditionerAPI);
+    public Manager(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {
+        super(employeeID,airConditionerAPI);
         this.temperature=temperature;
     }
 
@@ -28,7 +28,7 @@ public class Manager extends Employee {
     }
 
     @Override
-    public void getMessage() {
+    public void getMessage(String msg) {
 
     }
 
@@ -36,4 +36,19 @@ public class Manager extends Employee {
     public void sendMessage() {
 
     }
+
+    public boolean notifyWaitersToService(){
+        if (this.myInterphoneChannel == null)
+            return false;
+        return this.myInterphoneChannel.notify(this,
+                    "new service",
+                    BroadcastType.ALL_EMPLOYEE);
+    }
+
+    @Override
+    protected void notifyChannel(BroadcastType broadcastType, String operation) {
+
+    }
+
+
 }

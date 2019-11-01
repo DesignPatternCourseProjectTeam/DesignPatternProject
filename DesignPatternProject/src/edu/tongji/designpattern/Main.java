@@ -1,5 +1,6 @@
 package edu.tongji.designpattern;
-import edu.tongji.designpattern.ClassDesign.*;
+
+
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.FloorAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.HangingAirConditioner;
 import edu.tongji.designpattern.ClassDesign.Business.Builder.ComboBuilder;
@@ -8,15 +9,22 @@ import edu.tongji.designpattern.ClassDesign.Business.Builder.ConcreteComboBuilde
 import edu.tongji.designpattern.ClassDesign.Business.Builder.Director;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.MenuSource;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.ProxyMenuSource;
-import edu.tongji.designpattern.ClassDesign.Person.Customer;
-import edu.tongji.designpattern.ClassDesign.Person.Employee;
-import edu.tongji.designpattern.ClassDesign.Person.Manager;
-import edu.tongji.designpattern.ClassDesign.Person.Waiter;
+import edu.tongji.designpattern.ClassDesign.Person.*;
 import edu.tongji.designpattern.ClassDesign.Tools.Combo;
-import javafx.scene.control.cell.ComboBoxTableCellBuilder;
+
 
 public class Main {
 
+    //// 合并的时候这里写单元测试，加上自己的函数
+    public class Debug{
+        public void eyishengTest1(){
+            System.out.println("hello world");
+        }
+    }
+
+    /*
+        我定义了一些 Enum type，修改了你们的参数，但是输出时没有改
+     */
     public static void main(String[] args) {
 
 
@@ -44,8 +52,8 @@ public class Main {
 
 //test for BridgePattern
         //注册不同的职工来调用同一个接口API的不同实体类
-        Employee waiter1 = new Waiter(24,new FloorAirConditioner());
-        Employee manager = new Manager(25,new HangingAirConditioner());
+        Employee waiter1 = new Waiter("waiter1",24,new FloorAirConditioner());
+        Employee manager = new Manager("waiter2",25,new HangingAirConditioner());
 
         waiter1.changeTmp();
         manager.changeTmp();
@@ -53,10 +61,10 @@ public class Main {
 
 //test for CompositePattern
         //注册的四名顾客
-        Customer customer1=new Customer("张先生","男",1);
-        Customer customer2=new Customer("张女士","男",1);
-        Customer customer3=new Customer("张先生","女",0);
-        Customer customer4=new Customer("张女士","女",0);
+        Customer customer1=new Customer("张先生", Gender.MALE,VIPType.VIP);
+        Customer customer2=new Customer("张女士", Gender.FEMALE,VIPType.VIP);
+        Customer customer3=new Customer("张先生", Gender.MALE,VIPType.NONVIP);
+        Customer customer4=new Customer("张女士",Gender.FEMALE,VIPType.NONVIP);
 
         //通过是否为VIP将VIP顾客和非VIP顾客加入不同的List里面
         //感觉需要更好的划分方法（或者应该有判断语句来自动划分顾客种类？
@@ -83,6 +91,20 @@ public class Main {
         Combo comboA=director1.construct();
         Combo comboB=director2.construct();
 
+
+        ////<<<< eatamath debug
+//        ArrayList<Employee> arr = new ArrayList<>();
+//        Manager manager = new Manager("manager");
+//        arr.add(manager);
+//        Waiter wt1 = new Waiter("waiter 1");
+//        Waiter wt2 = new Waiter("waiter 2");
+//        arr.add(wt1);
+//        arr.add(wt2);
+//
+//        InterPhoneChannel phone = InterPhoneChannel.getInstance(arr);
+//
+//        var res = manager.notifyWaitersToService();
+//        System.out.println(res);
 
 
 
