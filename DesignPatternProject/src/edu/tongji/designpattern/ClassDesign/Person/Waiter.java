@@ -16,15 +16,44 @@ public class Waiter extends Employee {
     private Order currentOrder = null;
     private OrderRecordingStrategy strategy = null;
 
+    //默认构造函数：ruan
+    public Waiter(){
+        super();
+    }
 
-    public Waiter(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {
-        super(employeeID,airConditionerAPI);
+
+    public Waiter(double temperature,AirConditionerAPI airConditionerAPI) {
+        super(airConditionerAPI);
         this.temperature= temperature;
         this.employeeTitle = EmployeeTitle.WAITER;
     }
 
     public void getState(Customer customer){
         System.out.println("顾客现在的状态是：");
+    }
+
+
+//    //ruan
+//    public Waiter(double temperature, AirConditionerAPI airConditionerAPI) {
+//        super(airConditionerAPI);
+//        this.temperature= temperature;
+//    }
+
+    @Override
+    public void setOrder(Order order) {
+        this.order=order;
+        this.order.addEmploy(this);
+    }
+
+
+
+
+
+    @Override
+    public void settleComplaint() {
+        System.out.println("您好，请问您有什么问题吗?");
+        System.out.println("好的，我们会催促后厨尽快为您准备食物，请您稍等片刻！");
+        System.out.println("非常抱歉，同时祝您就餐愉快！");
     }
 
     @Override
@@ -35,11 +64,6 @@ public class Waiter extends Employee {
 
     @Override
     public void update() {
-
-    }
-
-    @Override
-    public void settleComplaint() {
 
     }
 

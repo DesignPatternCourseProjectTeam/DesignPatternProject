@@ -7,7 +7,7 @@ import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.AirCondit
 
 
 public abstract class Employee {
-    protected OrderAggregate order;
+    protected Order order;
     protected String employeeName;
     protected Gender employeeGender;
     protected Integer employeeAge;
@@ -24,9 +24,12 @@ public abstract class Employee {
 
     protected AirConditionerAPI airConditionerAPI;
 
-    public Employee(String employeeID,AirConditionerAPI airConditionerAPI){
-        this.employeeID = employeeID;
+    public Employee(AirConditionerAPI airConditionerAPI){
         this.airConditionerAPI= airConditionerAPI;
+    }
+    //ruan
+    public Employee() {
+
     }
 
 
@@ -41,6 +44,15 @@ public abstract class Employee {
     }
 
     public abstract void sendMessage();
+
+
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
 
     public Boolean setChannel(InterPhoneChannel channel){this.myInterphoneChannel = channel; return true;}
     protected abstract void notifyChannel(BroadcastType broadcastType, String operation);

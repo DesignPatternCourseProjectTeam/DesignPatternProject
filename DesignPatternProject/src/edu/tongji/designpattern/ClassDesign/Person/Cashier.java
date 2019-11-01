@@ -1,14 +1,37 @@
 package edu.tongji.designpattern.ClassDesign.Person;
 
+import edu.tongji.designpattern.ClassDesign.Business.AdaptorDemo.RealDiscount;
 import edu.tongji.designpattern.ClassDesign.Business.AirConditionerAPI.AirConditionerAPI;
+import edu.tongji.designpattern.ClassDesign.Order.Order;
+
+import java.text.DecimalFormat;
 
 public class Cashier extends Employee {
 
     private double temperature;
 
-    public Cashier(String employeeID,double temperature,AirConditionerAPI airConditionerAPI) {
-        super(employeeID,airConditionerAPI);
+    Order order;
+    String couponType;
+    RealDiscount realDiscount;
+
+    public Cashier(double temperature,AirConditionerAPI airConditionerAPI,  String couponType) {
+        super(airConditionerAPI);
         this.temperature=temperature;
+
+        this.order = order;
+        this.couponType = couponType;
+        realDiscount = new RealDiscount(couponType);
+    }
+
+    public void settleAccount(){
+        //这里执行结账操作，结账成功返回true
+        if(couponType.equals("N")){
+            System.out.println("您本次就餐共花费了"+order.getPrice()+"元，欢迎下次再来");
+        }else {
+            DecimalFormat df = new DecimalFormat( "0.0");
+            System.out.println("您的优惠卷是" + couponType + "类型的，可以享受" + df.format(realDiscount.getDiscount() * 10) + "折优惠。");
+            System.out.println("您本次就餐原价是" + order.getPrice() + "元,折后价是" + order.getPrice() * realDiscount.getDiscount() + "元。");
+        }
     }
 
     @Override

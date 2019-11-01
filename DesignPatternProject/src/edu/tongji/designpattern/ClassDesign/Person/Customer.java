@@ -13,6 +13,7 @@ public class Customer {
     private String customerName;
     private Gender customerGender;
 //    private int customerAge = 0;
+    private Integer VIPORNOT;//默认1为VIP，0为非VIP
     private VIPType viptype = VIPType.NONVIP;
 
     ////>>>>>>>>
@@ -24,8 +25,11 @@ public class Customer {
     private OrderPadCommand myCommand;
     private Waiter servedWaiter;
 
-    public Customer(String name){
-        this.customerName = name;
+    public Customer(String customerName, String gender,Integer VIPORNOT){
+        this.customerName=customerName;
+//        this.gender=gender;
+        this.VIPORNOT=VIPORNOT;
+        customers=new ArrayList<Customer>();
     }
 
     ////>>>>
