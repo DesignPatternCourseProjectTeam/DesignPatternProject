@@ -9,8 +9,13 @@ import edu.tongji.designpattern.ClassDesign.Business.Builder.ConcreteComboBuilde
 import edu.tongji.designpattern.ClassDesign.Business.Builder.Director;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.MenuSource;
 import edu.tongji.designpattern.ClassDesign.Business.MenuSource.ProxyMenuSource;
+import edu.tongji.designpattern.ClassDesign.Business.PrototypeMementoDemo.Item;
+import edu.tongji.designpattern.ClassDesign.Order.Order;
 import edu.tongji.designpattern.ClassDesign.Person.*;
 import edu.tongji.designpattern.ClassDesign.Tools.Combo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
@@ -52,11 +57,11 @@ public class Main {
 
 //test for BridgePattern
         //注册不同的职工来调用同一个接口API的不同实体类
-        Employee waiter1 = new Waiter("waiter1",24,new FloorAirConditioner());
-        Employee manager = new Manager("waiter2",25,new HangingAirConditioner());
-
-        waiter1.changeTmp();
-        manager.changeTmp();
+//        Employee waiter1 = new Waiter("waiter1",24,new FloorAirConditioner());
+//        Employee manager = new Manager("waiter2",25,new HangingAirConditioner());
+//
+//        waiter1.changeTmp();
+//        manager.changeTmp();
 
 
 //test for CompositePattern
@@ -107,7 +112,67 @@ public class Main {
 //        System.out.println(res);
 
 
+        //打折的测试
+        //RealDiscount realDiscount = new RealDiscount("A");
+        //System.out.printf("discount = "+realDiscount.getDiscount());
 
+        //投诉处理的测试
+//        Manager manager = Manager.getInstance();
+//        Waiter waiter = new Waiter();
+//
+//        Complaint complaint = new Complaint(1, manager, waiter);
+//        complaint.setCurHanlder();
+//        complaint.getEmployee().settleComplaint();
+//
+//        Complaint complaint1 = new Complaint(3, manager, waiter);
+//        complaint1.setCurHanlder();
+//        complaint1.settleProblem();
+
+        //结账处理的测试
+//        Order order = new Order();
+//        order.setPrice(100.0);
+//        Cashier cashier = new Cashier(order, "N");
+//
+//        VIPCashierDecorator vipCashierDecorator = new VIPCashierDecorator(cashier);
+//        vipCashierDecorator.settleAccount();
+
+
+        //原型和备忘录模式的测试
+//        Order order = new Order();
+//        order.setPrice(100.0);
+//
+//        OrderClone orderClone = new OrderClone(order);
+//
+//        OrderClone orderClone1 = (OrderClone)orderClone.clone();
+//        Memento memento = new Memento();
+//        memento.addOrderClone(orderClone1);
+//        //memento.getOrderClone(1);
+//        int length = memento.getSize();
+//        System.out.println(memento.getOrderClone(length-1).getPrice());
+
+
+
+        //输出菜单测试
+//        Menu menu = Menu.getInstance();
+//        menu.showMenu();
+
+        //观察者模式测试
+//        Order order= new Order();
+//        Employee waiter2 = new Waiter(24,new FloorAirConditioner(),order);
+//        Employee cook2= new Cook(24,new FloorAirConditioner(),order);
+//        order.setOrderState(0);
+//        order.setOrderState(1);
+//        //facade测试
+//        List<Item> items=new ArrayList<>();
+//        items.add(new Item("可乐",20.2));
+//        items.add(new Item("雪碧",20.2));
+//        items.add(new Item("酸梅汁",20.2));
+//        items.add(new Item("百威啤酒",20.2));
+//        order.setItemList(items);
+//        ((Waiter) waiter2).getDrinkList(order);
 
     }
+
+
+
 }
