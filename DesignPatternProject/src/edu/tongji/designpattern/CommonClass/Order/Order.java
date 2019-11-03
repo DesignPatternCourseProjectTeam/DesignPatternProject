@@ -52,7 +52,8 @@ public class Order extends AbstractAggregate<Dish> {
 
 
     /**
-     * @author  eyisheng
+     * @author  steve
+     * @return orderID 当前的 order ID
      */
     public String getOrderID() {
         return orderID;
@@ -114,16 +115,18 @@ public class Order extends AbstractAggregate<Dish> {
     }
 
 
-    /*
-        convert @undetermined-order into @order
+    /**
+     * @author steve
+     * @description set 目前的 Order 变成 DETERMINED
      */
     public void setTypeToDetermined(){
         this.type = OrderType.DETERMINED;
     }
 
 
-    /*
-        add new dish to the dish array
+    /**
+     * @author steve
+     * @param dsh 添加的菜
      */
     public void addDish(Dish dsh){
         dishes.add(dsh);
@@ -131,6 +134,12 @@ public class Order extends AbstractAggregate<Dish> {
 
     /*
         remove dish by dishID
+     */
+
+    /**
+     * @author steve
+     * @param dishID 删除的 dishID
+     * @return boolean
      */
     public boolean removeDish(String dishID){
         for (Dish dsh:dishes){
@@ -141,7 +150,9 @@ public class Order extends AbstractAggregate<Dish> {
         return false;
     }
 
-    public List<Dish> getDishes(){return this.dishes;}
+    public List<Dish> getDishes(){
+        return this.dishes;
+    }
 
 
     @Override

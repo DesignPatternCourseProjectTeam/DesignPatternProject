@@ -91,7 +91,7 @@ public class Cook extends Employee {
     @Override
     protected void notifyChannel(BroadcastType broadcastType, String operation) {
         try{
-            if (broadcastType == BroadcastType.ALL_EMPLOYEE){
+            if (broadcastType == BroadcastType.ALL_WAITER){
 
             }
         }catch (NullPointerException e){

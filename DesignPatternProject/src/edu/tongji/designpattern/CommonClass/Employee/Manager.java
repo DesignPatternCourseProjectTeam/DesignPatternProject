@@ -60,7 +60,7 @@ public class Manager extends Employee {
             return false;
         return this.myInterphoneChannel.notify(this,
                     "new service",
-                    BroadcastType.ALL_EMPLOYEE);
+                    BroadcastType.ALL_WAITER);
     }
 
     @Override

@@ -2,6 +2,14 @@ package edu.tongji.designpattern;
 
 
 
+import edu.tongji.designpattern.CommonClass.Employee.Employee;
+import edu.tongji.designpattern.CommonClass.Employee.EmployeeTitle;
+import edu.tongji.designpattern.CommonClass.Employee.Manager;
+import edu.tongji.designpattern.CommonClass.Employee.Waiter;
+import edu.tongji.designpattern.DevideByPattern.BridgePattern.AirConditionerAPI;
+import edu.tongji.designpattern.DevideByPattern.BridgePattern.FloorAirConditioner;
+import edu.tongji.designpattern.DevideByPattern.MediatorPattern.InterPhoneChannel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +19,19 @@ public class Main {
     //// 合并的时候这里写单元测试，加上自己的函数
     public class Debug{
         public class Eyisheng{
+            public void serveNewCustomer(){
+                List<Employee> elist = new ArrayList<>();
+                AirConditionerAPI airConditionerAPI = new FloorAirConditioner();
+                Waiter wt1 = new Waiter();
+                Waiter wt2 = new Waiter();
+                Manager manager = new Manager(1,"manager",
+                        EmployeeTitle.MANAGER,airConditionerAPI);
+                elist.add(wt1);
+                elist.add(wt2);
+                elist.add(manager);
+                InterPhoneChannel channel = InterPhoneChannel.getInstance(elist);
 
+            }
         }
     }
 
