@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fce093bd-1d28-43e6-ae2b-ae51a402afb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../JAVA/DesignPatternProject/DesignPatternProject/src/edu/tongji/designpattern/ClassDesign/Person/Cashier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/BioModelSpark.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/BioModelSpark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pythonProject/sparkTest_1/.spyproject/workspace.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pythonProject/sparkTest_1/.spyproject/workspace.ini" afterDir="false" />
+    <list default="true" id="0d53ebe3-d0f8-475b-bdd9-b2ece43e0e9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPatternProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/Coupon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/CouponA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/CouponB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/CouponC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/CouponN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/Discount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/DiscountAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AdaptorDemo/RealDiscount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AirConditionerAPI/AirConditionerAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AirConditionerAPI/FloorAirConditioner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/AirConditionerAPI/HangingAirConditioner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Builder/ComboBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Builder/ConcreteComboBuilderA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Builder/ConcreteComboBuilderB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Builder/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/ChainofResponsibilityDemo/Complaint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Command/AddDishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/AddDishCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Command/ConfirmOrderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/ConfirmOrderCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Command/CreateOrderCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/CreateOrderCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Command/DropDishCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/DropDishCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Command/OrderPadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/CommandPattern/OrderPadCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/DecoratorDemo/CashierDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/DecoratorDemo/VIPCashierDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/BeerOpener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/CockOpener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/DarkPlumJuiceOpener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/DrinkOpener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/OpenerMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Facade/SpriteOpener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Iterator/DishIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/DishIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Iterator/MyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/MyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/Iterator/OrderIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/IteratorPattern/OrderIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/MenuSource/MenuSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/MenuSource/ProxyMenuSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/MenuSource/RealMenuSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/OrderRecording/AddDishStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/AddDishStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/OrderRecording/DropDishStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/DropDishStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/OrderRecording/OrderConfirmStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderConfirmStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/OrderRecording/OrderCreateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderCreateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/OrderRecording/OrderRecordingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/StrategyPattern/OrderRecordingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/PrototypeMementoDemo/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/PrototypeMementoDemo/Memento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/PrototypeMementoDemo/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/PrototypeMementoDemo/OrderClone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/CheckOutState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/CustomerState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/EatState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/LeaveState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/OrderState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Business/State/WaitState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Order/AbstractAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Order/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Order/OrderAggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Order/OrderType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/BroadcastType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Cashier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Cook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/EmployeeTitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Filter/CustomerCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/CustomerCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Filter/NonVIPCustomerCriterira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/NonVIPCustomerCriterira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Filter/VIPCustomerCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/FilterPattern/VIPCustomerCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/VIPType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Person/Waiter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Tools/Combo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Tools/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/CommonClass/Other/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Tools/InterPhoneChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/DevideByPattern/MediatorPattern/InterPhoneChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/ClassDesign/Tools/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/tongji/designpattern/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/tongji/designpattern/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +91,9 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -24,26 +102,41 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1Sh4eDsJx8ZXTVc7yfN4yNyAmO6" />
+  <component name="ProjectId" id="1T3lTRjQfuh2FD3C0rgg7FUBOZb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDE\MyProject\JAVA\DesignPatternProject" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.tongji.designpattern.CommonClass.Other" />
+      <recent name="edu.tongji.designpattern.DevideByPattern.MediatorPattern" />
+      <recent name="edu.tongji.designpattern.DevideByPattern.ChainofResponsibilityPattern" />
+      <recent name="edu.tongji.designpattern.CommonClass" />
+      <recent name="edu.tongji.designpattern.CommonClass.Items" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDE\GITPROJECT\DesignPatternProjectPerson\DesignPatternProjectLocal\DesignPatternProject\src\edu\tongji\designpattern\DevideByPattern\FilterPattern" />
+      <recent name="D:\IDE\GITPROJECT\DesignPatternProjectPerson\DesignPatternProjectLocal\DesignPatternProject\src\edu\tongji\designpattern\DevideByPattern\StrategyPattern" />
+      <recent name="D:\IDE\GITPROJECT\DesignPatternProjectPerson\DesignPatternProjectLocal\DesignPatternProject\src\edu\tongji\designpattern\DevideByPattern\IteratorPattern" />
+      <recent name="D:\IDE\GITPROJECT\DesignPatternProjectPerson\DesignPatternProjectLocal\DesignPatternProject\src\edu\tongji\designpattern\DevideByPattern\CommandPattern" />
+      <recent name="C:\Users\linpx\IdeaProjects\DesignPattern\src\edu\tongji\designpattern\DevideByPattern\AdapterPattern" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -59,12 +152,15 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.tongji.designpattern.Main" />
-      <module name="DesignPatternProject" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <module name="DesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.tongji.designpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,12 +176,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fce093bd-1d28-43e6-ae2b-ae51a402afb7" name="Default Changelist" comment="" />
-      <created>1572002587021</created>
+      <changelist id="0d53ebe3-d0f8-475b-bdd9-b2ece43e0e9a" name="Default Changelist" comment="" />
+      <created>1572610089233</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572002587021</updated>
-      <workItem from="1572002591035" duration="1213000" />
+      <updated>1572610089233</updated>
+      <workItem from="1572610092322" duration="5500000" />
+      <workItem from="1572682151976" duration="12976000" />
+      <workItem from="1572696673165" duration="143000" />
+      <workItem from="1572696871075" duration="2672000" />
     </task>
     <servers />
   </component>
@@ -97,10 +196,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
