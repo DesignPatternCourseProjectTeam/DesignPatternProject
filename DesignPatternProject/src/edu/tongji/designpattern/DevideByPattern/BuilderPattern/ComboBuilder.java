@@ -1,5 +1,9 @@
 package edu.tongji.designpattern.DevideByPattern.BuilderPattern;
 
+import edu.tongji.designpattern.CommonClass.Items.Item;
+
+import java.util.List;
+
 /**
  * @created by Cheng
  * 套餐建造类：建造者模式的核心类
@@ -9,7 +13,14 @@ package edu.tongji.designpattern.DevideByPattern.BuilderPattern;
  *       通过这些方法可以建造不同的组件（本例中即套餐）
  */
 public abstract class ComboBuilder {
+
     protected Combo combo=new Combo();
+
+
+    protected List<Item> itemList;
+
+    protected Double price;
+
 
 
     /**
@@ -26,6 +37,26 @@ public abstract class ComboBuilder {
 
     public abstract void buildPrice();
 
+    public abstract void buildNum();
+
+    public abstract void buildItemList();
+
+    public List<Item> getItemList() {
+        return itemList;
+    }
+
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
+    }
+
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
     /**
     * @description: 返回实现的套餐，返回类型为Combo（套餐）类型

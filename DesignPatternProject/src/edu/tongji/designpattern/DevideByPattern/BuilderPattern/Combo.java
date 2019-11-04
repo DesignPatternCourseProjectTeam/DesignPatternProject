@@ -1,5 +1,9 @@
 package edu.tongji.designpattern.DevideByPattern.BuilderPattern;
 
+import edu.tongji.designpattern.CommonClass.Items.Item;
+
+import java.util.List;
+
 /**
  *   @created by Cheng
  *   套餐类：用于建造者模式
@@ -7,10 +11,13 @@ package edu.tongji.designpattern.DevideByPattern.BuilderPattern;
  *   方法：用于描述组件的性质
  */
 public class Combo {
+
+    private Integer Num;
     private String dishA;
     private String dishB;
     private String drink;
     private String price;
+    private List<Item> itemList;
 
     /**
     * @description: “组件”信息描述函数，用来描述组件信息或性质
@@ -33,5 +40,17 @@ public class Combo {
 
     public void setPrice(String price){
         System.out.println("总价："+price+" ");
+    }
+
+    public void setNum(Integer num) {
+        System.out.println("编号："+num+" ");
+    }
+
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
+    }
+
+    public List<Item> getItemList() {
+        return itemList;
     }
 }

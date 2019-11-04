@@ -19,10 +19,10 @@ public class Complaint {
      Employee employee;
 
      //定义投诉等级的级别
-     public int level;
+     public String level;
 
      //构造函数
-     public Complaint(int level, Manager manager, Waiter waiter){
+     public Complaint(String level, Manager manager, Waiter waiter){
          this.level = level;
          this.manager  =manager;
          this.waiter = waiter;
@@ -33,7 +33,7 @@ public class Complaint {
      //假设投诉登记为1时服务员前来处理，否则的话是由经理来处理
      //最终默认投诉会被处理
      public void setCurHanlder(){
-         if (level==1){
+         if (level.equals("1")){
              employee = waiter;
          }else {
              employee = manager;
@@ -49,10 +49,6 @@ public class Complaint {
         return employee;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
     public Manager getManager() {
         return manager;
     }
@@ -65,15 +61,19 @@ public class Complaint {
         this.employee = employee;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
     public void setManager(Manager manager) {
         this.manager = manager;
     }
 
     public void setWaiter(Waiter waiter) {
         this.waiter = waiter;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 }

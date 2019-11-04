@@ -23,6 +23,7 @@ public class Director {
     public Combo construct(){
         //组件的具体构造过程
         System.out.println("套餐内容：");
+        comboBuilder.buildNum();
         comboBuilder.buildDishA();
         comboBuilder.buildDishB();
         comboBuilder.buildDrink();
